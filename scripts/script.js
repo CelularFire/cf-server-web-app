@@ -1,12 +1,9 @@
-flatpickr("#fecha");
-
 function enviarMensaje() {
-	var fechaSeleccionada = document.getElementById("fecha").value;
-	if(fechaSeleccionada != "") {
-		Telegram.Auth.login(function(data) {
-			Telegram.App.sendMessage({
-				text: "Fecha seleccionada: " + fechaSeleccionada
-			});
-		});
+	const dateInput = document.getElementById("input-fecha");
+	const selectedDate = dateInput.value;
+	const telegram = window.Telegram.WebApp;
+
+	if(selectedDate != "") {
+		telegram.sendData(selectedDate);
 	}
 }
