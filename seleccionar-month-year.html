@@ -25,10 +25,19 @@
       for="fecha"
     >
       <h3>
-        Seleccione una fecha
+        Seleccione un mes
       </h3>
     </label>
-    <input type="date" name="fecha" id="input-fecha" class="seleccionar-fecha__input-fecha">
+    <input type="number" id="mes" min="1" max="12" class="seleccionar-fecha__input-fecha">
+    <label
+      class="seleccionar-fecha__label"
+      for="fecha"
+    >
+      <h3>
+        Seleccione un mes
+      </h3>
+    </label>
+    <input type="number" id="ano" min="2022" class="seleccionar-fecha__input-fecha">
     <button
       class="seleccionar-fecha__enviar-mensaje"
       onclick="enviarMensaje()"
@@ -37,7 +46,16 @@
     </button>
   </div>
 
-  <script src="scripts/enviarMensajeFecha.js"></script>
+  <script src="scripts/enviarMensajeYearMonth.js"></script>
+  <script>
+    var fechaActual = new Date();
+    var mesActual = fechaActual.getMonth() + 1;
+
+    var anoActual = fechaActual.getFullYear();
+  
+    document.getElementById("mes").value = mesActual;
+    document.getElementById("ano").value = anoActual;
+  </script>
 </body>
 
 </html>
