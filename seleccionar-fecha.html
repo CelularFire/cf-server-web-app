@@ -18,23 +18,17 @@
 </head>
 
 <body>
-  <div class="seleccionar-fecha">
-    <label
-      class="seleccionar-fecha__label"
-      for="fecha"
-    >
-      <h3>
-        Seleccione una fecha
-      </h3>
-    </label>
-    <input type="date" name="fecha" id="input-fecha" class="seleccionar-fecha__input-fecha">
-    <button
-      class="seleccionar-fecha__enviar-mensaje"
-      onclick="enviarMensaje()"
-    >
-      Enviar fecha a Telegram
-    </button>
-  </div>
+  <!-- <div class="seleccionar-fecha"> -->
+  <label for="fecha">
+    <h3>
+      Seleccione una fecha
+    </h3>
+  </label>
+  <input type="date" name="fecha" id="input-fecha">
+  <button class="send-data" onclick="enviarMensaje()">
+    Enviar fecha a Telegram
+  </button>
+  <!-- </div> -->
 
   <script src="scripts/enviarMensajeFecha.js"></script>
 </body>

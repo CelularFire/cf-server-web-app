@@ -1,9 +1,9 @@
-.seleccionar-fecha__label {	
-	display: inline-block;
-	color: var(--tg-theme-text-color)
+label {
+  display: inline-block;
+  color: var(--tg-theme-text-color)
 }
 
-.seleccionar-fecha__enviar-mensaje {
+.send-data {
   display: block;
   width: 100%;
   font-size: 1rem;
@@ -16,11 +16,11 @@
   cursor: pointer;
 }
 
-.seleccionar-fecha__enviar-mensaje:hover {
-	background-color: var(--tg-theme-button-color);
+.send-data:hover {
+  background-color: var(--tg-theme-button-color);
 }
 
-.seleccionar-fecha__input-fecha {
+input {
   display: block;
   width: 100%;
   box-sizing: border-box;
