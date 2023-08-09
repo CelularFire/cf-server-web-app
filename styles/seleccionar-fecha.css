@@ -20,7 +20,7 @@ label {
   background-color: var(--tg-theme-button-color);
 }
 
-input {
+input, select {
   display: block;
   width: 100%;
   box-sizing: border-box;

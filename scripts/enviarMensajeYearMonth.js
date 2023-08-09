@@ -1,8 +1,8 @@
-function enviarMensaje() {
+function sendMonthYear() {
 	const mesInput = document.getElementById("mes");
-	const anoInput = document.getElementById("ano");
+	const yearInput = document.getElementById("year");
 	const selectedMonth = mesInput.value;
-	const selectedYear = anoInput.value;
+	const selectedYear = yearInput.value;
 	const telegram = window.Telegram.WebApp;
 
 	if(selectedMonth != "" && selectedYear != "") {

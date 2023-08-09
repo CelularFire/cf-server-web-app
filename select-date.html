@@ -18,34 +18,17 @@
 </head>
 
 <body>
-  <!-- <div class="seleccionar-fecha"> -->
   <label for="fecha">
     <h3>
-      Seleccione un mes
+      Seleccione una fecha
     </h3>
   </label>
-  <input type="number" id="mes" min="1" max="12">
-  <label class="seleccionar-fecha__label" for="fecha">
-    <h3>
-      Seleccione un mes
-    </h3>
-  </label>
-  <input type="number" id="year" min="2022">
-  <button class="send-data" onclick="enviarMensaje()">
+  <input type="date" name="fecha" id="input-fecha">
+  <button class="send-data" onclick="sendDate()">
     Enviar fecha a Telegram
   </button>
-  <!-- </div> -->
 
-  <script src="scripts/enviarMensajeYearMonth.js"></script>
-  <script>
-    var fechaActual = new Date();
-    var mesActual = fechaActual.getMonth() + 1;
-
-    var yearActual = fechaActual.getFullYear();
-
-    document.getElementById("mes").value = mesActual;
-    document.getElementById("year").value = yearActual;
-  </script>
+  <script src="scripts/sendDate.js"></script>
 </body>
 
 </html>
